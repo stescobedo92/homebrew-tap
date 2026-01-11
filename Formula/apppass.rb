@@ -1,7 +1,7 @@
 class Apppass < Formula
   desc "Generate secure passwords for your applications."
   homepage "https://github.com/stescobedo92/apppass"
-  url "https://github.com/stescobedo92/apppass/releases/download/v1.0.0/apppass-aarch64-apple-darwin.tar.gz"
+  url "https://github.com/stescobedo92/apppass/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "9e89d6c86a4b3013d1faddfb68137c15424d23b0d1e10c2c0757ada8bdd0cbae"
   license "MIT"
 
@@ -18,7 +18,7 @@ class Apppass < Formula
       args << "--no-default-features" << "--features" << "tui"
     end
 
-    system "cargo", "install", *std_cargo_args(args: args)
+    system "cargo", "install", *std_cargo_args, *args
   end
 
   test do
