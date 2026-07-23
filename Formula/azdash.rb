@@ -1,8 +1,8 @@
 class Azdash < Formula
   desc "Azure cost, trend, and waste diagnostics CLI"
   homepage "https://github.com/stescobedo92/az-dashboard"
-  url "https://github.com/stescobedo92/az-dashboard/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "5db009e841448af453703f2063fd4556956db44c730f72f35ece0a2c02ebe6ae"
+  url "https://github.com/stescobedo92/az-dashboard/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "f37a8525943d9986046f35dcff093ba7fabfe8a587e23f4cf07373d09b6a21a9"
   license "MIT"
 
   depends_on "cmake" => :build
